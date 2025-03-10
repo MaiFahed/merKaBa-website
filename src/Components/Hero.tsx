@@ -1,6 +1,5 @@
 import pyramidsVideo from "../assets/pyramids.mp4"
-
-function Main(){
+const Hero = () => {
     return (
         <div className="main">
             <div className="overlay"></div>
@@ -12,5 +11,4 @@ function Main(){
         </div>
     );
 }
-
-export default Main;
+export default Hero
