@@ -3,7 +3,7 @@ const Hero = () => {
     return (
         <div className="main">
             <div className="overlay"></div>
-            <video src={pyramidsVideo} autoPlay muted loop />
+            <video src={pyramidsVideo} autoPlay muted loop playsInline />
             <div className="content">
                 <h1>Welcome</h1>
                 <p>To my site.</p>
