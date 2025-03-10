@@ -1,21 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
 
-.main{
+.main {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
-video{
+video {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-.content{
+.content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -27,16 +28,61 @@ video{
   color: white;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, #353879, #F8DD9B);
-  opacity: 0.5
-  /* background: linear-gradient(135deg, #353879, #F8DD9B);
-  mix-blend-mode: multiply;
-  opacity: 0.9; */
+  opacity: 0.5;
+  z-index: 1; /* Ensure overlay is on top */
 }
+
   
+
+.header {
+  position: fixed; /* or fixed if you want it to stay on top when scrolling */
+  top: 0;
+  left: 0;
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; /* Make sure header is on top */
+}
+
+.header-left h1 {
+  color: white;
+}
+
+.header-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav ul li {
+  color: white;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .header {
+    display: none;
+  }
+}
