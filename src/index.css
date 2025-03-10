@@ -81,8 +81,11 @@ video {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 670px) {
   .header {
     display: none;
+  }
+  video {
+    object-fit: cover; 
   }
 }
