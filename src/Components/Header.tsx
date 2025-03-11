@@ -1,10 +1,18 @@
-// import logo from "../assets/logo.jpg"
+// import { useState } from "react";
+
 const Header = () => {
+  // const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
   return (
     <header className="header">
       <div className="header-left">
         <h1>MerKaBa</h1>
       </div>
+
+      {/* <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+      </div> */}
+
       <nav className="header-nav">
         <ul>
           <li>Home</li>
